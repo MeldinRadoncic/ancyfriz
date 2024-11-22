@@ -58,16 +58,16 @@ const Navbar = () => {
       {/* Mobile Drawer */}
       {/* The mobile drawer appears when 'isOpen' is true and slides in from the right */}
       <div
-        className={`fixed top-0 right-0 h-full bg-primary-charcoal shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 bg-neutral-gray shadow-lg transform transition-transform duration-300 ease-in-out ${
           isOpen
-            ? "translate-x-0"
+            ? "translate-x-0 min-h-screen z-50"
             : "translate-x-full"
         } w-1/2 md:hidden`}>
         {/* Close Button */}
         {/* This button allows the user to close the mobile drawer (appears at the top right) */}
         <div className='flex justify-end p-4'>
           <button
-            className='text-2xl text-neutral-gray cursor-pointer'
+            className='text-2xl text-primary-charcoal cursor-pointer'
             onClick={closeDrawer}>
             {/* The '✕' icon is used for closing the drawer */}
             ✕
@@ -76,12 +76,13 @@ const Navbar = () => {
 
         {/* Drawer Links */}
         {/* These links are shown inside the mobile drawer and render based on the NavbarData */}
-        <div className='flex flex-col items-start space-y-4 p-6'>
+        <div className='flex flex-col items-start space-y-4 p-6 text-primary-charcoal'>
           {NavbarData.map((item) => (
             <NavItem
               key={item.id}
               to={item.link}
               onClick={closeDrawer}
+              textColor='text-primary-charcoal'
               icon={item.icon}
               label={item.title}
             />
