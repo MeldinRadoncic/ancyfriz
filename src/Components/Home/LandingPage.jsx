@@ -1,5 +1,6 @@
 import Layout from "../Layout/Layout";
 import HeroBanner from "./HeroBanner";
+import Services from "./Services";
 
 const LandingPage = () => {
   return (
@@ -7,6 +8,7 @@ const LandingPage = () => {
     <Layout>
 
       <HeroBanner />
+      <Services />
     </Layout>
     </>
   );

@@ -1,6 +1,8 @@
 import React from 'react';
+
 import Section from '../Section';
 import Button from '../Button';
+import MainTitle from '../../Components/Titles/MainTitle.jsx'
 
 const HeroBanner = () => {
   return (
@@ -20,9 +22,12 @@ const HeroBanner = () => {
       <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mx-auto px-6 sm:px-12 md:px-0  lg:px-24">
         {/* Left Side - Title */}
         <div className="flex flex-col items-center lg:items-start text-white text-center lg:text-left justify-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight drop-shadow-md">
-            Salon gdje savršena frizura postaje stvarnost!
-          </h1>
+          <MainTitle
+          title='Salon gdje savršena frizura postaje stvarnost!'
+          
+          />
+            
+          
 
           {/* Buttons for Large Devices */}
           <div className="hidden lg:flex space-x-4 mt-8">
@@ -32,7 +37,7 @@ const HeroBanner = () => {
         </div>
 
         {/* Right Side - Subtitle */}
-        <div className="flex flex-col items-center lg:items-start text-white text-center lg:text-left justify-center">
+        <div className="flex flex-col items-center lg:items-start text-white text-center lg:text-left justify-center lg:hidden">
           <p className="text-lg sm:text-xl lg:text-2xl bg-black/40 p-4 rounded-lg shadow-md">
             Prepustite se stručnim rukama naših profesionalaca i uživajte u modernim, stilizovanim frizurama koje odražavaju vašu jedinstvenu ličnost. Vaša kosa zaslužuje najbolje!
           </p>
