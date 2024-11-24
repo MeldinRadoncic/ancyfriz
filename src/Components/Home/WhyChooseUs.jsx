@@ -2,12 +2,12 @@ import React from 'react';
 
 import Section from '../Section';
 import SecondaryTitle from '../Titles/SecondaryTitle';
-import ServiceData from '../../AppData/ServicesData'
+import WhyChooseUsData from '../../AppData/WhyChooseUsData'
 import Card from '../Card'
 
 
 
-const Services = () => {
+const WhyChooseUs = () => {
     return (
         <Section>
             <div className='w-full px-16 flex flex-col'>
@@ -18,7 +18,7 @@ const Services = () => {
                 />
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-8'>
-            {ServiceData.map(service => (
+            {WhyChooseUsData.map(service => (
                 <div className='flex justify-around px-4 py-4'>
  <Card 
                 key={service.id}
@@ -35,4 +35,4 @@ const Services = () => {
     )
 }
 
-export default Services;
+export default WhyChooseUs;

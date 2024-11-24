@@ -1,6 +1,8 @@
 import Layout from "../Layout/Layout";
+
 import HeroBanner from "./HeroBanner";
-import Services from "./Services";
+import WhyChooseUs from "./WhyChooseUs";
+import OurServices from './OurServices'
 
 const LandingPage = () => {
   return (
@@ -8,7 +10,8 @@ const LandingPage = () => {
     <Layout>
 
       <HeroBanner />
-      <Services />
+      <WhyChooseUs />
+      <OurServices />
     </Layout>
     </>
   );
