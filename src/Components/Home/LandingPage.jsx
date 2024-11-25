@@ -1,8 +1,8 @@
 import Layout from "../Layout/Layout";
 
 import HeroBanner from "./HeroBanner";
-import WhyChooseUs from "./WhyChooseUs";
 import OurServices from './OurServices'
+import OurCommitment from './OurCommitment'
 
 const LandingPage = () => {
   return (
@@ -10,8 +10,8 @@ const LandingPage = () => {
     <Layout>
 
       <HeroBanner />
-      <WhyChooseUs />
       <OurServices />
+      <OurCommitment />
     </Layout>
     </>
   );

@@ -1,46 +1,31 @@
+import React from 'react';
+import { FaCut } from 'react-icons/fa';
 
+const iconSize = 24;
+const iconColor = '#A7A284'; // Accent Olive from tailwind.config.js
 
-
-const OurServicesData = [
+const WhyChooseUsData = [
 
     {
         id: 1,
-        title: "Web Development",
-        description: "We provide the best web development services in the market. Our team of experts will help you to create the best website for your business.",
-        icon: "fas fa-desktop"
+        title: "Sisanje",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc.",
+        icon: <FaCut size={iconSize} color={iconColor}/>,
     },
     {
         id: 2,
-        title: "Mobile Development",
-        description: "We provide the best mobile development services in the market. Our team of experts will help you to create the best mobile app for your business.",
-        icon: "fas fa-mobile-alt"
+        title: "Feniranje",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc.",
+        icon: <FaCut size={iconSize} color={iconColor}/>,
     },
     {
         id: 3,
-        title: "Digital Marketing",
-        description: "We provide the best digital marketing services in the market. Our team of experts will help you to create the best digital marketing strategy for your business.",
-        icon: "fas fa-bullhorn"
-    },
-    {
-        id: 4,
-        title: "SEO Services",
-        description: "We provide the best SEO services in the market. Our team of experts will help you to create the best SEO strategy for your business.",
-        icon: "fas fa-search"
-    },
-    {
-        id: 5,
-        title: "Graphic Design",
-        description: "We provide the best graphic design services in the market. Our team of experts will help you to create the best graphic design for your business.",
-        icon: "fas fa-paint-brush"
-    },
-    {
-        id: 6,
-        title: "Content Writing",
-        description: "We provide the best content writing services in the market. Our team of experts will help you to create the best content for your business.",
-        icon: "fas fa-file-alt"
+        title: "Farbanje",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc.",
+        icon: <FaCut size={iconSize} color={iconColor}/>,
     }
 
 ]
 
 
-export default OurServicesData;
+export default WhyChooseUsData;

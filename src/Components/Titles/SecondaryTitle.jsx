@@ -1,7 +1,7 @@
 // SecondaryTitle.js
-const SecondaryTitle = ({title, className = ''}) => {
+const SecondaryTitle = ({title, className = '', animation}) => {
     return (
-        <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-semibold leading-snug drop-shadow-sm ${className}`}>
+        <h2 className={`text-3xl sm:text-4xl lg:text-5xl font-semibold leading-snug drop-shadow-sm ${className}`} data-aos={animation}>
             {title}
         </h2>
     );
