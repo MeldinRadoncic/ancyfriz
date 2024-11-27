@@ -23,11 +23,11 @@ const HeroBanner = () => {
           <MainTitle title='Salon gdje savršena frizura postaje stvarnost!' />
 
           {/* Buttons for Large Devices */}
-          <div className='hidden lg:flex space-x-2 mt-12 w-full'>
+          <div className='hidden lg:flex space-x-2 mt-12 w-full lg:w-3/4'>
             <Button className='bg-black w-1/2'>
               Zakažite termin
             </Button>
-            <Button className='bg-transparent text-white border-2 rounded-sm w-1/2'>
+            <Button className='bg-transparent text-white border-2 rounded-sm w-1/2 hover:bg-primary-charcoal'>
               Pozovite Nas
             </Button>
           </div>
