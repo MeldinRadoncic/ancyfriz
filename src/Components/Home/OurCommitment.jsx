@@ -13,7 +13,7 @@ const OurCommitment = () => {
           className='text-neutral-gray'
         />
 
-        <div className='text-neutral-gray px-6 sm:px-12 md:px-0  lg:px-24'>
+        <div className='text-neutral-gray px-6 sm:px-12 md:px-0  lg:px-24 lg:w-3/4 xlg:w-1/2 mx-auto'>
           <p className='paragraph drop-shadow-md'>
           U nasem salonu ponosimo se pružanjem prilagođenih rješenja koja odgovaraju vašim jedinstvenim potrebama. Od početka do kraja, naš tim je posvećen osiguravanju najviših standarda kvalitete i zadovoljstva.
 

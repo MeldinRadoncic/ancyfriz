@@ -7,7 +7,7 @@ const Section = ({ children, className = '', style = {} }) => {
                     py-12 sm:py-16 md:py-32 lg:py-60 xl:py-64
                        sm:min-h-0 min-h-screen
                     flex flex-col items-center 
-                    lg:flex-row lg:justify-start 
+                     
                     ${className}`}
         >
           {children}

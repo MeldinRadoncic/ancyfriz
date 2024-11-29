@@ -19,7 +19,7 @@
 /* Responsiveness: Adjust font size for large screens */
 @media (min-width: 1024px) {
   .paragraph {
-    font-size: 1.25rem; /* Larger text for large screens */
+    font-size: 1.2rem; /* Larger text for large screens */
     line-height: 1.9;
   }
 }

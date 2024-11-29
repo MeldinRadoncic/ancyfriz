@@ -4,6 +4,7 @@ import HeroBanner from "./HeroBanner";
 import OurServices from './OurServices'
 import OurCommitment from './OurCommitment'
 import Gallery from './Gallery'
+import OurProducts from './OurProducts'
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <OurServices />
       <OurCommitment />
       <Gallery />
+      <OurProducts />
     </Layout>
     </>
   );
