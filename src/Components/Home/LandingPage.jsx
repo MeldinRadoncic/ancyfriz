@@ -7,6 +7,7 @@ import Gallery from './Gallery'
 import OurProducts from './OurProducts'
 import AboutFounder from "./AboutFounder";
 import OurTestimonials from "./OurTestimonials";
+import CTA from './CTA'
 
 const LandingPage = () => {
   return (
@@ -20,6 +21,7 @@ const LandingPage = () => {
       <OurProducts />
       <AboutFounder />
       <OurTestimonials />
+      <CTA />
     </Layout>
     </>
   );
