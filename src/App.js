@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import "./App.css";
 import Pages from "./Components/Routes/Pages";
 import Navbar from "./Components/Layout/Navbar/Navbar";
+import Footer from "./Components/Layout/Footer/Footer";
 
 function App() {
   // Initialize AOS library for animations
@@ -23,6 +24,8 @@ function App() {
       <Navbar />
       {/* Pages component contains all the routes of the website. */}
       <Pages />
+      {/* Footer component contains the footer of the website. */}
+      <Footer />
     </>
   );
 }
