@@ -22,7 +22,9 @@ const OurProducts = () => {
             className="relative bg-primary-charcoal rounded-lg shadow-xl overflow-hidden transition-transform hover:scale-105"
           >
             {/* Product Image */}
-            <div className="relative group">
+            <div className="relative group"
+            animation='fade-up'
+            >
               <img
                 src={product.img}
                 alt={product.title}
