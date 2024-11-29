@@ -5,10 +5,9 @@ import "./App.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-//Swiper
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// //react/slick is a library that provides a carousel component.
+import "slick-carousel/slick/slick.css";  // Slick carousel styles
+import "slick-carousel/slick/slick-theme.css";  // Additional theme styles
 import {
   BrowserRouter } from "react-router-dom";
 

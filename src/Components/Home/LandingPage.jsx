@@ -6,6 +6,7 @@ import OurCommitment from './OurCommitment'
 import Gallery from './Gallery'
 import OurProducts from './OurProducts'
 import AboutFounder from "./AboutFounder";
+import OurTestimonials from "./OurTestimonials";
 
 const LandingPage = () => {
   return (
@@ -18,6 +19,7 @@ const LandingPage = () => {
       <Gallery />
       <OurProducts />
       <AboutFounder />
+      <OurTestimonials />
     </Layout>
     </>
   );
