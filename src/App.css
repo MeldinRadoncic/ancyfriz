@@ -42,3 +42,24 @@
   background-color: #333333;
   opacity: 0.6;
 }
+
+
+/* bg our products landing page */
+.bg-ourproducts {
+  background-image: url("../public/images/landing/ourproductsbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bg-ourproducts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  opacity: 0.6;
+}
