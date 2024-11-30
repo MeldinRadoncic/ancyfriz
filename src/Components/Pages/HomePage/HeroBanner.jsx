@@ -1,8 +1,8 @@
 import React from "react";
 
-import Section from "../Section";
-import Button from "../Button";
-import MainTitle from "../../Components/Titles/MainTitle.jsx";
+import Section from "../../Section.jsx";
+import Button from "../../Button.jsx";
+import MainTitle from "../../Titles/MainTitle.jsx";
 
 const HeroBanner = () => {
   return (

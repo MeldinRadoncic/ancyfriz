@@ -1,7 +1,7 @@
 
-import Section from "../Section";
-import SecondaryTitle from "../Titles/SecondaryTitle";
-import Button from '../Button'
+import Section from "../../Section";
+import SecondaryTitle from "../../Titles/SecondaryTitle";
+import Button from '../../Button'
 
 const OurCommitment = () => {
   return (

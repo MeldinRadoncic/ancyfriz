@@ -1,9 +1,9 @@
 import React from "react";
 
-import OurProductsData from "../../AppData/OurProductsData";
-import Section from "../Section";
-import SecondaryTitle from "../Titles/SecondaryTitle";
-import ThirdTitle from "../Titles/YhirdTitle";
+import OurProductsData from "../../../AppData/OurProductsData";
+import Section from "../../Section";
+import SecondaryTitle from "../../Titles/SecondaryTitle";
+import ThirdTitle from "../../Titles/ThirdTitle";
 
 const OurProducts = () => {
   return (

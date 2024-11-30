@@ -1,4 +1,4 @@
-import Layout from "../Layout/Layout";
+import Layout from "../../Layout/Layout";
 
 import HeroBanner from "./HeroBanner";
 import OurServices from './OurServices'

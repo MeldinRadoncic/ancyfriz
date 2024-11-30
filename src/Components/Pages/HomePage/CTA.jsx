@@ -1,7 +1,7 @@
 import React from "react";
-import Section from "../Section";
-import SecondaryTitle from "../Titles/SecondaryTitle";
-import Button from "../Button";
+import Section from "../../Section";
+import SecondaryTitle from "../../Titles/SecondaryTitle";
+import Button from "../../Button";
 
 const CTA = () => {
   return (

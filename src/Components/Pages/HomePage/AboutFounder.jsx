@@ -1,8 +1,8 @@
 import React from "react";
 
-import Section from "../Section";
-import SecondaryTitle from "../Titles/SecondaryTitle";
-import Button from "../Button";
+import Section from "../../Section";
+import SecondaryTitle from "../../Titles/SecondaryTitle";
+import Button from "../../Button";
 
 const AboutFounder = () => {
   return (
@@ -18,8 +18,10 @@ const AboutFounder = () => {
             kaknfkanfikfae ajifjkafa
           </p>
           <div className='mt-4 md:mt-12'>
-            <Button>
-              Saznaj Vise o Meni
+            <Button className='px-14'>
+              <a href='/onama'>
+                  O Nama
+              </a>
             </Button>
           </div>
         </div>

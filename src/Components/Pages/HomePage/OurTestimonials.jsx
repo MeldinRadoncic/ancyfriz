@@ -1,11 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import OurTestimonialsData from '../../AppData/OurTestimonialsData'
-import Section from '../Section';
-import SecondaryTitle from '../Titles/SecondaryTitle';
-import ThirdTitle from '../Titles/YhirdTitle';
-import RatingStars from '../RatingStarts';
+import OurTestimonialsData from '../../../AppData/OurTestimonialsData';
+import Section from '../../Section';
+import SecondaryTitle from '../../Titles/SecondaryTitle';
+import ThirdTitle from '../../Titles/ThirdTitle';
+import RatingStars from '../../RatingStarts';
 
 
 

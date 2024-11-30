@@ -1,6 +1,6 @@
 import React from "react";
 
-import ThirdTitle from './Titles/YhirdTitle'
+import ThirdTitle from './Titles/ThirdTitle'
 
 const Card = ({
   title,

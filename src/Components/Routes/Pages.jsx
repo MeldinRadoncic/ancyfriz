@@ -4,7 +4,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import LandingPage from "../Home/LandingPage.jsx";
+import LandingPage from "../Pages/HomePage/LandingPage.jsx";
 
 // This is the main component that will be used to render all the pages of the website.
 const Pages = () => {
@@ -14,6 +14,7 @@ const Pages = () => {
         path='/'
         element={<LandingPage />}
       />
+      {/* <Route path='/onama' element={<AboutUs />} /> */}
     </Routes>
   );
 };
