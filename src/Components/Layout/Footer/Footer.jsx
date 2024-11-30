@@ -5,7 +5,7 @@ import NavbarData from "../../../AppData/NavbarData";
 
 const Footer = () => {
   return (
-    <footer className='bg-gray-800 text-white py-8'>
+    <footer className='bg-primary-charcoal text-white py-8'>
       <div className='container mx-auto flex flex-col lg:flex-row lg:justify-between text-center lg:text-left'>
         {/* Visit Us Section */}
         <div className='mb-6 lg:mb-0 flex flex-col'>
