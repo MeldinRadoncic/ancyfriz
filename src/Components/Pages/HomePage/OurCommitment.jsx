@@ -23,7 +23,10 @@ const OurCommitment = () => {
     
       <div className='mt-12 drop-shadow-md'>
       <Button className=' bg-black'>
+        <a href='/onama'>
+
         Saznajte Vise o Nama
+        </a>
         </Button>
       </div>
       </div>

@@ -19,8 +19,8 @@ const AboutFounder = () => {
           </p>
           <div className='mt-4 md:mt-12'>
             <Button className='px-14'>
-              <a href='/onama'>
-                  O Nama
+              <a href='/anidaimaovic'>
+                  O Meni
               </a>
             </Button>
           </div>

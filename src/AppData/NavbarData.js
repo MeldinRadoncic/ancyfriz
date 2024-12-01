@@ -13,19 +13,19 @@ const NavbarData = [
     },
     {
         id: 2,
-        title: 'About',
-        link: '/about',
+        title: 'O nama',
+        link: '/onama',
         icon: <FaUser size={iconSize} />
     },
     {
-        title: 'Services',
-        link: '/services',
+        title: 'Usluge',
+        link: '/usluge',
         icon: <FaCut size={iconSize}/> 
     },
     {
         id: 3,
-        title: 'Contact',
-        link: '/contact',
+        title: 'Kontakt',
+        link: '/kontakt',
         icon: <FaPhone size={iconSize}/>
     },
 ]
