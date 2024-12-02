@@ -17,7 +17,7 @@ const HeroBanner = () => {
         aria-hidden='true'></div>
 
       {/* Content */}
-      <div className='relative z-10 lg:py-42 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mx-auto px-6 sm:px-12 md:px-0  lg:px-12 xl:px-24'>
+      <div className='relative z-10 lg:py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mx-auto px-6 sm:px-12 md:px-0  lg:px-12 xl:px-24'>
         {/* Left Side - Title */}
         <div className='flex flex-col items-center lg:items-start text-white text-center lg:text-left justify-center'>
           <MainTitle title='Salon gdje savršena frizura postaje stvarnost!' />
