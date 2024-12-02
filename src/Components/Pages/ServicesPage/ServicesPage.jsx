@@ -14,7 +14,6 @@ const ServicesPage = () => {
       <ReusableBanner
         title='Naše Usluge'
         description='Otkrijte širok spektar usluga koje nudimo za vašu ljepotu i njegu kose.'
-        className='bg-primary-charcoal text-white'
       />
 
       <Section>

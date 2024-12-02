@@ -14,7 +14,7 @@ const AboutPage = () => {
       <ReusableBanner
         title="O nama"
         description="Ovdje možete saznati sve o nama."
-        className="bg-primary-charcoal text-white"
+        
       />
 
       <Section>
