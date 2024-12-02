@@ -5,7 +5,7 @@ import MainTitle from "./Titles/MainTitle";
 
 const ReusableBanner = ({title, description, className=''}) => {
     return (
-        <div className={`flex flex-col items-center justify-center py-24 text-center ${className}`}>
+        <div className={`flex flex-col items-center justify-center py-12 md:py:16 lg:py-24 text-center ${className}`}>
             <MainTitle
                 title={title}
             className='  text-accent-rose-gold'/>
