@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const Button = ({ children, className }) => {
+const Button = ({ children, className, type }) => {
     return (
-        <button className={`bg-accent-rose-gold text-neutral-pearl px-4 py-2 mt-4 ${className}`}>
+        <button type={type} className={`bg-accent-rose-gold text-neutral-pearl px-4 py-2 mt-4 ${className}`}>
             {children}
         </button>
     )
