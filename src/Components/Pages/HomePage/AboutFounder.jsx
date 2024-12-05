@@ -17,13 +17,11 @@ const AboutFounder = () => {
             Lorem bafkajfa
             kaknfkanfikfae ajifjkafa
           </p>
-          <div className='mt-4 md:mt-12'>
-            <Button className='px-14'>
+            <Button className='w-full lg:w-1/2'>
               <a href='/anidaimaovic'>
                   O Meni
               </a>
             </Button>
-          </div>
         </div>
         <div className='mt-6 md:mt-0 md:w-1/2'>
           <img
