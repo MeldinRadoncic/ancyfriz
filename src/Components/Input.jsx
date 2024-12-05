@@ -1,4 +1,5 @@
 import React from "react";
+import Error from "./Error";
 
 function Input({ 
   label, 
@@ -11,6 +12,8 @@ function Input({
   className = "", 
   ...rest 
 }) {
+  const showError = error && value === ''; // Show error styles only when there's an error and the field is empty
+
   return (
     <div className={className}>
       {label && (
@@ -26,13 +29,13 @@ function Input({
         onChange={onChange}
         placeholder={placeholder}
         className={`w-full mt-2 p-3 border ${
-          error ? "border-red-500" : "border-gray-300"
+          showError ? "border-red-500" : "border-gray-300"
         } rounded-lg shadow-sm focus:outline-none focus:ring-2 ${
-          error ? "focus:ring-red-500" : "focus:ring-indigo-500"
+          showError ? "focus:ring-red-500" : "focus:ring-indigo-500"
         }`}
         {...rest}
       />
-      {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
+      {showError && <Error message={error} />}
     </div>
   );
 }
