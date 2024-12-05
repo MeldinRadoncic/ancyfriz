@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 
-const iconSize = 18;        
+const iconSize = 24;        
 const SocialMediaData = [
     {
         id: 1,
