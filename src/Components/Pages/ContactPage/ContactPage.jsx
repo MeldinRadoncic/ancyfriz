@@ -6,18 +6,27 @@ import ThirdTitle from "../../Titles/ThirdTitle";
 import Input from "../../Input";
 import Button from "../../Button";
 import Error from "../../Error";
+import validateFormFields from "../../../utils/validateFormFields";
+import SocialMediaData from "../../../AppData/SocialMediaData";
 
-function validate(values) {
-  const errors = {};
-  if (!values.name) errors.name = "Name is required.";
-  if (!values.email) errors.email = "Email is required.";
-  else if (!/\S+@\S+\.\S+/.test(values.email)) errors.email = "Invalid email address.";
-  if (!values.phone) errors.phone = "Phone number is required.";
-  if (!values.question) errors.question = "Please enter your question.";
-  return errors;
-}
+const ContactPage = () => {
+  // Validation rules
+  const validationRules = {
+    name: [{ rule: "required", message: "Name is required." }],
+    email: [
+      { rule: "required", message: "Email is required." },
+      { rule: "email", message: "Please enter a valid email address." },
+    ],
+    phone: [
+      { rule: "required", message: "Phone number is required." },
+      { rule: "pattern", message: "Only numeric values allowed.", pattern: /^[0-9]*$/ },
+    ],
+    question: [{ rule: "required", message: "Please enter your question." }],
+  };
 
-function ContactPage() {
+  const validate = (values) => validateFormFields(values, validationRules);
+
+  // useForm hook for managing form state
   const { values, errors, handleChange, handleSubmit } = useForm(
     { name: "", email: "", phone: "", question: "" },
     validate
@@ -26,13 +35,14 @@ function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [formError, setFormError] = useState("");
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (formData) => {
     setLoading(true);
     setFormError("");
+
     try {
-      console.log("Form Submitted:", data);
+      console.log("Form Submitted:", formData);
       alert("Thank you for contacting us! We will respond shortly.");
-    } catch (err) {
+    } catch (error) {
       setFormError("Failed to submit the form. Please try again later.");
     } finally {
       setLoading(false);
@@ -41,60 +51,90 @@ function ContactPage() {
 
   return (
     <>
+      {/* Banner */}
       <ReusableBanner
         title="Contact Us"
-        subtitle="Have questions? We're here to help."
+        description="Have questions? We're here to help."
         background="bg-indigo-600"
       />
+
+      {/* Social Media Section */}
+     
+        <div className="flex justify-center space-x-4 py-4">
+          {SocialMediaData.map((social) => (
+            <a
+              key={social.id}
+              href={social.link}
+              target="_blank"
+              rel="noreferrer"
+              className=" text-primary-charcoal hover:text-accent-rose-gold transition-transform transform hover:scale-110"
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      
+
+      {/* Contact Form Section */}
       <Section>
-        <div className="w-full lg:w-1/2 lg:px-24 bg-neutral-gray mx-auto p-8 rounded-lg shadow-lg">
-          <ThirdTitle title="Send us a message" className="text-center" />
+        <div className="w-full lg:w-2/3 xl:w-1/2 mx-auto p-6 bg-white rounded-lg shadow-md">
+          <ThirdTitle title="Send us a message" className="text-center mb-4" />
 
-          {loading && <div className="text-center"><p>Loading...</p></div>}
-          {formError && <Error message={formError} className="mb-4 text-center" />}
-
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-            {/* Name Field */}
-            <div>
-              <Input
-                label="Name"
-                name="name"
-                value={values.name}
-                onChange={handleChange}
-                error={errors.name}
-              />
-             {errors.name && console.log(errors.name) && <Error message={errors.name} />}
+          {/* Loading State */}
+          {loading && (
+            <div className="text-center mb-4">
+              <p className="text-indigo-500 font-medium">Submitting your message...</p>
             </div>
+          )}
 
-            {/* Email Field */}
-            <div>
-              <Input
-                label="Email"
-                type="email"
-                name="email"
-                value={values.email}
-                onChange={handleChange}
-                error={errors.email}
-              />
-              {errors.email && <Error message={errors.email} />}
-            </div>
+          {/* General Form Error */}
+          {/* {formError && (
+            <Error
+              message={formError}
+              className="mb-4 text-center text-red-500"
+            />
+          )} */}
 
-            {/* Phone Field */}
-            <div>
-              <Input
-                label="Phone Number"
-                type="tel"
-                name="phone"
-                value={values.phone}
-                onChange={handleChange}
-                error={errors.phone}
-              />
-             {errors.phone && <Error message={errors.phone} />}
-            </div>
+          {/* Form */}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            {/* Name Input */}
+            <Input
+              label="Name"
+              name="name"
+              value={values.name}
+              onChange={handleChange}
+              error={errors.name}
+            />
 
-            {/* Question Field */}
+            {/* Email Input */}
+            <Input
+              label="Email"
+              type="email"
+              name="email"
+              value={values.email}
+              onChange={handleChange}
+              error={errors.email}
+            />
+
+            {/* Phone Number Input */}
+            <Input
+              label="Phone Number"
+              type="tel"
+              name="phone"
+              value={values.phone}
+              onChange={(e) => {
+                const value = e.target.value.replace(/\D/g, "");
+                handleChange({ target: { name: "phone", value } });
+              }}
+              error={errors.phone}
+            />
+
+            {/* Question Textarea */}
             <div>
-              <label htmlFor="question" className="block font-medium text-gray-700">
+              <label
+                htmlFor="question"
+                className="block text-gray-700 font-medium"
+              >
                 Question
               </label>
               <textarea
@@ -103,13 +143,16 @@ function ContactPage() {
                 rows="4"
                 value={values.question}
                 onChange={handleChange}
-                className={`w-full mt-2 p-3 border ${
-                  errors.question ? "border-red-500" : "border-gray-300"
-                } rounded-lg shadow-sm focus:outline-none focus:ring-2 ${
-                  errors.question ? "focus:ring-red-500" : "focus:ring-indigo-500"
+                className={`w-full mt-2 p-3 border rounded-lg shadow-sm focus:outline-none ${
+                  errors.question
+                    ? "border-red-500 focus:ring-red-500"
+                    : "border-gray-300 focus:ring-indigo-500"
                 }`}
+                aria-invalid={errors.question ? "true" : "false"}
               ></textarea>
-              <Error message={errors.question} />
+              {errors.question && (
+                <p className="mt-1 text-sm text-red-500">{errors.question}</p>
+              )}
             </div>
 
             {/* Submit Button */}
@@ -121,6 +164,6 @@ function ContactPage() {
       </Section>
     </>
   );
-}
+};
 
 export default ContactPage;
