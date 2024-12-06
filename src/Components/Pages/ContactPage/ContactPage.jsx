@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 import useForm from "../../../hooks/useForm";
 import ReusableBanner from "../../ReusableBanner";
@@ -37,18 +38,22 @@ const ContactPage = () => {
   const [loading, setLoading] = useState(false);
   const [formError, setFormError] = useState("");
 
-  const onSubmit = async (formData) => {
-    setLoading(true);
-    setFormError("");
-
-    try {
-      console.log("Form Submitted:", formData);
-      alert("Thank you for contacting us! We will respond shortly.");
-    } catch (error) {
-      setFormError("Failed to submit the form. Please try again later.");
-    } finally {
-      setLoading(false);
-    }
+  const onSubmit = async () => {
+          setLoading(true);
+          setFormError("");
+          try {
+           const response = await axios.post('http://localhost:5000/api/send-email', values);
+            if(!response.ok){
+              setFormError('Something went wrong');
+            }
+            console.log('RESPONSE: ', response);
+            setLoading(false);
+          }catch(error){
+            console.log('ERROR: ', error);
+            setFormError('Something went wrong');
+          }finally{
+            setLoading(false);
+          }
   };
 
   return (
