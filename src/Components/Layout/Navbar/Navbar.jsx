@@ -20,17 +20,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='w-full bg-primary-charcoal px-4 sm:px-6 md:px-12 lg:px-42  py-8 shadow-md z-50'>
+    <nav className='w-full bg-primary-charcoal px-4 sm:px-6 md:px-12 lg:px-42  shadow-md z-50'>
       <div className='flex items-center justify-between'>
         {/* Logo */}
-        <div>
+        <a href='/'>
           <img
-            src='/logo.jpg'
+            src='/logo-dark.svg'
             alt='Ancy Friz Logo'
-            width={50}
-            height={50}
+            width={100}
+            height={100}
           />
-        </div>
+        </a>
 
         {/* Hamburger Button for mobile screens */}
         {/* The button toggles the mobile drawer on click (appears only on smaller screens) */}
