@@ -3,7 +3,7 @@ import SecondaryTitle from "./Titles/SecondaryTitle";
 
 const ImageTextBlock = ({ imageSrc, altText, title, description, reverse = false }) => {
   return (
-    <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-center gap-8 mt-8 flex-wrap lg:flex-nowrap`}>
+    <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'} items-start gap-12 mt-8 mb-12 flex-wrap lg:flex-nowrap`}>
       {/* Image */}
       <img
         src={imageSrc}
