@@ -14,7 +14,7 @@ const AnidaPage = () => {
       />
 
       <Section>
-        <div className='container mx-auto px-8 lg:px-24'>
+        <div className='container mx-auto px-8 lg:px-32  w-full'>
           {/* Image and Text Section */}
           <ImageTextBlock
             imageSrc='./images/AboutMePage/anidaimamovicsalon.webp'
@@ -24,7 +24,7 @@ const AnidaPage = () => {
             className='text-primary-charcoal'
           />
         </div>
-        <div className='container mx-auto px-8 lg:px-24'>
+        <div className='container mx-auto px-8 lg:px-32  w-full'>
           {/* Image and Text Section */}
           <ImageTextBlock
             imageSrc='./images/AboutMePage/anidaimamovicsalon.webp'

@@ -8,11 +8,11 @@ const ImageTextBlock = ({ imageSrc, altText, title, description, reverse = false
       <img
         src={imageSrc}
         alt={altText}
-        className="rounded-lg shadow-lg w-full md:w-1/2 lg:w-1/2 xl:w-1/2 max-w-full"
+        className="rounded-lg shadow-lg w-full md:w-1/2 lg:w-1/2 xl:w-1/2 max-x-full"
       />
       {/* Text Section */}
       <div className="flex flex-col justify-center w-full lg:w-1/2 xl:w-1/2">
-        <SecondaryTitle title={title} className="text-accent-rose-gold" />
+        <SecondaryTitle title={title} className="text-accent-rose-gold"  />
         <p className="paragraph">{description}</p>
       </div>
     </div>

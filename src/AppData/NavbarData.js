@@ -35,12 +35,7 @@ const NavbarData = [
         link: '/kontakt',
         icon: <FaPhone size={iconSize}/>
     },
-    {
-        id: 6,
-        title: 'Anida Imamovic',
-        link: '/anidaimamovic',
-        icon: <FaUser size={iconSize} />
-    }
+    
 ]
 
 export default NavbarData;
