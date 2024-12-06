@@ -17,11 +17,15 @@ const AboutFounder = () => {
             Lorem bafkajfa
             kaknfkanfikfae ajifjkafa
           </p>
-            <Button className='w-full lg:w-1/2'>
-              <a href='/anidaimaovic'>
-                  O Meni
-              </a>
-            </Button>
+          <div className='mt-12 drop-shadow-md w-full lg:w-1/2 mx-auto md:mx-0'>
+      <a href="/anidaimamovic">
+  <Button className="w-1/2 bg-accent-rose-gold">
+    O Meni
+  </Button>
+</a>
+
+      </div>
+
         </div>
         <div className='mt-6 md:mt-0 md:w-1/2'>
           <img
