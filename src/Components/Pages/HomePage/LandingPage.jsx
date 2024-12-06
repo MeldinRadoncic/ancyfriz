@@ -8,12 +8,14 @@ import OurProducts from './OurProducts'
 import AboutFounder from "./AboutFounder";
 import OurTestimonials from "./OurTestimonials";
 import CTA from './CTA'
+import Meta from "../../Meta";
 
 const LandingPage = () => {
   return (
     <>
+    <Meta />
     <Layout>
-
+    
       <HeroBanner />
       <OurServices />
       <OurCommitment />

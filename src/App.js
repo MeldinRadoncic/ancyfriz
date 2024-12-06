@@ -21,6 +21,7 @@ function App() {
 
   return (
     <>
+      
       {/* Navbar component contains the navigation links of the website. */}
       <Navbar />
       {/* Pages component contains all the routes of the website. */}

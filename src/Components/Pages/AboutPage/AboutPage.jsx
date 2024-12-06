@@ -5,11 +5,16 @@ import SecondaryTitle from "../../Titles/SecondaryTitle";
 import CTA from "../../../Components/Pages/HomePage/CTA";
 import ImageTextBlock from "../../../Components/ImageTextBlock";
 import Card from "../../../Components/Card";
-import AboutPageData from "../../../AppData/AboutPageData"; // Assuming you have this file
+import AboutPageData from "../../../AppData/AboutPageData";
+import Meta from "../../Meta";
 
 const AboutPage = () => {
   return (
     <>
+      <Meta
+        title="O nama"
+        description="Ovdje možete saznati sve o nama."
+      />
       {/* Reusable Banner Section */}
       <ReusableBanner
         title="O nama"

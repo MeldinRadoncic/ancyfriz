@@ -1,4 +1,5 @@
 import React from "react";
+
 import Section from "../../Section";
 import ReusableBanner from "../../ReusableBanner";
 import SecondaryTitle from "../../Titles/SecondaryTitle";
@@ -6,10 +7,17 @@ import CTA from "../../../Components/Pages/HomePage/CTA";
 import ImageTextBlock from "../../../Components/ImageTextBlock";
 import Card from "../../../Components/Card";
 import ServicePageData from "../../../AppData/ServicePageData";
+import Meta from "../../Meta";
 
 const ServicesPage = () => {
   return (
     <>
+      <Meta
+        title='Naše Usluge'
+        description='Otkrijte širok spe
+ktar usluga koje nudimo za vašu ljepotu i njegu kose.'
+      />
+      
       {/* Reusable Banner Section */}
       <ReusableBanner
         title='Naše Usluge'

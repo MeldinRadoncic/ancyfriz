@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import useForm from "../../../hooks/useForm";
 import ReusableBanner from "../../ReusableBanner";
 import Section from "../../Section";
@@ -8,6 +9,7 @@ import Button from "../../Button";
 import Error from "../../Error";
 import validateFormFields from "../../../utils/validateFormFields";
 import SocialMediaData from "../../../AppData/SocialMediaData";
+import Meta from "../../Meta";
 
 const ContactPage = () => {
   // Validation rules
@@ -51,6 +53,10 @@ const ContactPage = () => {
 
   return (
     <>
+    <Meta
+        title="Kontaktirajte nas"
+        description="Imate pitanja? Mi smo ovdje da pomognemo."
+        />
       {/* Banner */}
       <ReusableBanner
         title="Contact Us"
