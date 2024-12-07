@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 
 import useForm from "../../../hooks/useForm";
@@ -7,7 +7,7 @@ import Section from "../../Section";
 import ThirdTitle from "../../Titles/ThirdTitle";
 import Input from "../../Input";
 import Button from "../../Button";
-import Error from "../../Error";
+import Loading from "../../Loading";
 import validateFormFields from "../../../utils/validateFormFields";
 import SocialMediaData from "../../../AppData/SocialMediaData";
 import Meta from "../../Meta";
@@ -15,16 +15,16 @@ import Meta from "../../Meta";
 const ContactPage = () => {
   // Validation rules
   const validationRules = {
-    name: [{ rule: "required", message: "Name is required." }],
+    name: [{ rule: "required", message: "Ime je obavezno" }],
     email: [
-      { rule: "required", message: "Email is required." },
-      { rule: "email", message: "Please enter a valid email address." },
+      { rule: "required", message: "Email je obavezan" },
+      { rule: "email", message: "Molimo vas ukucajte validan email" },
     ],
     phone: [
-      { rule: "required", message: "Phone number is required." },
-      { rule: "pattern", message: "Only numeric values allowed.", pattern: /^[0-9]*$/ },
+      { rule: "required", message: "Broj telefona je obavezan" },
+      { rule: "pattern", message: "Samo samo su brojevi dozvoljeni", pattern: /^[0-9]*$/ },
     ],
-    question: [{ rule: "required", message: "Please enter your question." }],
+    question: [{ rule: "required", message: "Molimo vas ukucajete vase pitanje." }],
   };
 
   const validate = (values) => validateFormFields(values, validationRules);
@@ -36,32 +36,41 @@ const ContactPage = () => {
   );
 
   const [loading, setLoading] = useState(false);
-  const [formError, setFormError] = useState("");
+  const [formError, setFormError] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const onSubmit = async () => {
-          setLoading(true);
-          setFormError("");
-          try {
-           const response = await axios.post('http://localhost:5000/api/send-email', values);
-            if(!response.ok){
-              setFormError('Something went wrong');
-            }
-            console.log('RESPONSE: ', response);
-            setLoading(false);
-          }catch(error){
-            console.log('ERROR: ', error);
-            setFormError('Something went wrong');
-          }finally{
-            setLoading(false);
-          }
+    setLoading(true);
+    setFormError("");
+    try {
+      const response = await axios.post('http://localhost:5000/api/send-email', values);
+      if (!response.ok) {
+        setFormError(true);
+      }
+      setSuccess(true);
+      values.name = "";
+      values.email = "";
+      values.phone = "";
+      values.question = "";
+    } catch (error) {
+      console.log('ERROR: ', error);
+      setFormError(true);
+      setSuccess(false);
+      console.error(error);
+    } finally {
+      setFormError(false);
+      setLoading(false);
+    }
   };
+
+  const isFormValid = values.name && values.email && values.phone && values.question && !loading;
 
   return (
     <>
-    <Meta
+      <Meta
         title="Kontaktirajte nas"
         description="Imate pitanja? Mi smo ovdje da pomognemo."
-        />
+      />
       {/* Banner */}
       <ReusableBanner
         title="Contact Us"
@@ -70,21 +79,19 @@ const ContactPage = () => {
       />
 
       {/* Social Media Section */}
-     
-        <div className="flex justify-center space-x-4 py-4">
-          {SocialMediaData.map((social) => (
-            <a
-              key={social.id}
-              href={social.link}
-              target="_blank"
-              rel="noreferrer"
-              className=" text-primary-charcoal hover:text-accent-rose-gold transition-transform transform hover:scale-110"
-            >
-              {social.icon}
-            </a>
-          ))}
-        </div>
-      
+      <div className="flex justify-center space-x-4 py-4">
+        {SocialMediaData.map((social) => (
+          <a
+            key={social.id}
+            href={social.link}
+            target="_blank"
+            rel="noreferrer"
+            className=" text-primary-charcoal hover:text-accent-rose-gold transition-transform transform hover:scale-110"
+          >
+            {social.icon}
+          </a>
+        ))}
+      </div>
 
       {/* Contact Form Section */}
       <Section>
@@ -94,17 +101,26 @@ const ContactPage = () => {
           {/* Loading State */}
           {loading && (
             <div className="text-center mb-4">
+              <Loading />
               <p className="text-indigo-500 font-medium">Submitting your message...</p>
             </div>
           )}
 
           {/* General Form Error */}
-          {/* {formError && (
-            <Error
-              message={formError}
-              className="mb-4 text-center text-red-500"
-            />
-          )} */}
+          {formError ? (
+            <div className="mb-4 text-center text-red-500">
+              <p className='paragraph text-red-500'>Ups, Doslo je do greške, Pokušajte ponovo</p>
+            </div>
+            ) : null}
+
+          {/* Success Message */}
+          {success && (
+            <div className="mb-4 text-center text-green-500">
+              <p className='paragraph text-green-500'>Uspješno ste poslali poruku</p>
+            </div>
+          )}
+
+
 
           {/* Form */}
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -167,10 +183,21 @@ const ContactPage = () => {
             </div>
 
             {/* Submit Button */}
-            <Button type="submit" className="w-full">
-              Submit
+            <Button
+              type="submit"
+              className="w-full"
+              disabled={!isFormValid}
+            >
+              POSALJI
             </Button>
           </form>
+          <p className="text-sm text-center text-gray-600 mt-4">
+  Slanjem ovog obrasca slažete se s našom{" "}
+  <a href="/privacy-policy" className="text-blue-500 underline">
+    politikom privatnosti
+  </a>.
+</p>
+
         </div>
       </Section>
     </>
