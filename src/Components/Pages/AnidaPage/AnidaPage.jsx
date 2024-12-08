@@ -5,10 +5,15 @@ import AnidaPageData from "../../../AppData/AnidaPageData";
 import ReusableBanner from "../../ReusableBanner";
 import ImageTextBlock from "../../ImageTextBlock";
 import CTA from "../../../Components/Pages/HomePage/CTA";
+import Meta from "../../Meta";
 
 const AnidaPage = () => {
   return (
     <>
+      <Meta
+        title='Anida Imamovic'
+        description='Ovdje možete saznati sve o Anidi Imamović.'
+      />
       <ReusableBanner
         title='Ja sam Anida'
         description='Lorem Lorem Lorem Lorem'

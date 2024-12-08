@@ -5,8 +5,8 @@ function Meta(props = {}) {
     description = "Ahcy Friz Salon",
     url = "https://www.ancyfriz.com/",
 
-    icon = "/favicon.ico",
-    author = "Anida Imamovic",
+    icon = "./favicon.ico",
+    author = "Anida Imamović",
     canonical = "https://www.ancyfriz.com/",
 
     // Default OG values
