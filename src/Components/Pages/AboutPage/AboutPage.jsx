@@ -18,7 +18,7 @@ const AboutPage = () => {
       {/* Reusable Banner Section */}
       <ReusableBanner
         title="O nama"
-        description="Ovdje možete saznati sve o nama."
+        description="Za Beskrajnu Ljepotu i Stil, AncyFriz – Vaša Destinacija!"
         
       />
 
