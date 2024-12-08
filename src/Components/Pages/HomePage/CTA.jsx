@@ -18,7 +18,7 @@ const CTA = () => {
           appointment today and
           experience the difference!
         </p>
-        <div className='grid grid-cols-2 gap-8 w-full lg:w-1/4 mx-auto'>
+        <div className='flex mx-auto justify-around items-center py-2 w-full lg:w-3/4'>
         <a href="tel:+1234567899">
           <Button className='px-8 py-3 text-lg font-semibold bg-yellow-500 text-gray-800 rounded-sm shadow-lg hover:bg-yellow-600 transition duration-300'>
             Pozovite Nas

@@ -6,7 +6,22 @@ import { FaCut, FaBrush, FaSpa, FaLeaf, FaHandHoldingHeart } from "react-icons/f
 const iconSize = 20;
 const iconColor = '#B78E74';    // accent-rose-gold
 
+// ServicePageData data
 const ServicePageData = [
+  {
+    id: 1,
+    imageSrc: 'https://via.placeholder.com/500x300',
+    altText: 'Salon services overview',
+    title: 'Naše Usluge',
+    description: 'U AncyFriz salonu nudimo personalizirane tretmane za njegu kose i ljepotu. Svaka usluga je prilagođena vašim potrebama, s naglaskom na kvalitetu i profesionalnost.',
+    className: 'text-primary-charcoal',
+  },
+];
+
+
+
+// ServicePageDataCards data
+const ServicePageDataCards = [
     {
         id: 1,
       icon: <FaCut size={iconSize} color={iconColor}/>,
@@ -51,4 +66,7 @@ const ServicePageData = [
     },
   ];
 
-  export default ServicePageData;
+export {
+  ServicePageData,
+  ServicePageDataCards
+}

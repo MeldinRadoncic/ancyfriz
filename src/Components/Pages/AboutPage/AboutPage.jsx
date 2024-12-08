@@ -5,7 +5,7 @@ import SecondaryTitle from "../../Titles/SecondaryTitle";
 import CTA from "../../../Components/Pages/HomePage/CTA";
 import ImageTextBlock from "../../../Components/ImageTextBlock";
 import Card from "../../../Components/Card";
-import AboutPageData from "../../../AppData/AboutPageData";
+import {AboutPageData, AboutPageDataCards} from "../../../AppData/AboutPage/AboutPageData";
 import Meta from "../../Meta";
 
 const AboutPage = () => {
@@ -25,27 +25,21 @@ const AboutPage = () => {
       <Section>
         <div className="container mx-auto px-8 lg:px-24">
           {/* First Image and Text Section */}
-          <ImageTextBlock
-            imageSrc="https://via.placeholder.com/500x300"
-            altText="About us overview"
-            title="Ko smo mi?"
-            description="AncyFriz je moderan Beauty salon smješten u Sarajevu, osnovan s misijom pružanja vrhunske usluge šišanja, bojanja i njege kose za sve uzraste. Naš prioritet je osigurati jedinstveno iskustvo za svakog klijenta."
-            className="text-primary-charcoal"
-          />
-
-          {/* Second Image and Text Section */}
-          <ImageTextBlock
-            imageSrc="https://via.placeholder.com/500x300"
-            altText="Our services overview"
-            title="Šta radimo?"
-            reverse={true}
-            description="Pružamo širok spektar frizerskih usluga, uključujući personalizirana šišanja, stiliziranje, farbanje, tretmane za zdravlje kose i savjetovanje. Naš prioritet je zadovoljiti želje klijenata, koristeći visokokvalitetne proizvode i najnovije tehnike u svijetu frizerstva."
-            className="text-primary-charcoal"
-          />
+          {AboutPageData.map((data) => (
+        <ImageTextBlock
+          key={data.id}
+          imageSrc={data.imageSrc}
+          altText={data.altText}
+          title={data.title}
+          description={data.description}
+          className={data.className}
+          reverse={data.id % 2 === 1} // Dynamically set reverse based on id so every odd id will have reverse
+        />
+      ))}
 
           {/* About Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16">
-            {AboutPageData.map((aboutItem) => (
+            {AboutPageDataCards.map((aboutItem) => (
               <Card
                 key={aboutItem.id}
                 icon={aboutItem.icon}

@@ -6,7 +6,7 @@ import SecondaryTitle from "../../Titles/SecondaryTitle";
 import CTA from "../../../Components/Pages/HomePage/CTA";
 import ImageTextBlock from "../../../Components/ImageTextBlock";
 import Card from "../../../Components/Card";
-import ServicePageData from "../../../AppData/ServicePageData";
+import {ServicePageData, ServicePageDataCards} from "../../../AppData/ServicePageData/ServicePageData";
 import Meta from "../../Meta";
 
 const ServicesPage = () => {
@@ -27,17 +27,21 @@ ktar usluga koje nudimo za vašu ljepotu i njegu kose.'
       <Section>
         <div className='container mx-auto px-8 lg:px-24'>
           {/* Image and Text Section */}
-          <ImageTextBlock
-            imageSrc='https://via.placeholder.com/500x300'
-            altText='Salon services overview'
-            title='Naše Usluge'
-            description='U AncyFriz salonu nudimo personalizirane tretmane za njegu kose i ljepotu. Svaka usluga je prilagođena vašim potrebama, s naglaskom na kvalitetu i profesionalnost.'
-            className='text-primary-charcoal'
-          />
+          {ServicePageData.map((data) => (
+        <ImageTextBlock
+          key={data.id}
+          imageSrc={data.imageSrc}
+          altText={data.altText}
+          title={data.title}
+          description={data.description}
+          className='text-primary-charcoal'
+          reverse={data.id % 2 === 1} // Dynamically set reverse based on id
+        />
+      ))}
 
           {/* Service Cards */}
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 mt-16'>
-            {ServicePageData.map(
+            {ServicePageDataCards.map(
               (service) => (
                 <Card
                   key={service.id}
