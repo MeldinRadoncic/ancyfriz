@@ -14,8 +14,7 @@ const AboutFounder = () => {
             className='mb-4 text-2xl md:text-3xl font-semibold'
           />
           <p className='paragraph mb-6 text-base md:text-lg'>
-            Lorem bafkajfa
-            kaknfkanfikfae ajifjkafa
+          Vaša kosa u sigurnim rukama
           </p>
           <div className='mt-12 drop-shadow-md w-full lg:w-1/2 mx-auto md:mx-0'>
       <a href="/anidaimamovic">

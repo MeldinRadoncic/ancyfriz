@@ -11,7 +11,11 @@ const OurServices = () => {
       <div className='max-w-screen-xl mx-auto px-6 lg:px-16 flex flex-col space-y-12'>
         {/* Title */}
         <div className='text-center'>
-          <SecondaryTitle title='Nase Usluge' />
+          <SecondaryTitle title='Zašto Odabrati Nas?' />
+          <div className='mx-auto w-full lg:w-3/4 lg:px-4'>
+          <p className='paragraph'>Naš tim posvećen je pružanju vrhunskih frizerskih usluga, koristeći moderne tehnike, visokokvalitetne proizvode i personalizirani pristup za svaki stil</p>
+          </div>
+         
         </div>
 
         {/* Cards */}

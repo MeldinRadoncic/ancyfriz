@@ -9,10 +9,20 @@ const OurProducts = () => {
   return (
     <Section className='bg-ourproducts relative'>
       {/* Title */}
+      <div className='max-w-screen-xl mx-auto px-6 lg:px-16 flex flex-col py-12 '>
+      <div className='text-center'>
       <SecondaryTitle
-        title='Our Products'
+        title='Samo Najbolje za Vašu Kosu'
         className='text-neutral-gray text-center'
       />
+      </div>
+      <div className='mx-auto w-full lg:w-3/4 lg:px-4 z-50'>
+      <p className='paragraph text-neutral-gray text-center'>
+      Koristimo pažljivo odabrane, profesionalne proizvode renomiranih brendova kako bismo osigurali savršene rezultate za njegu i stiliziranje vaše kose.
+
+      </p>
+      </div>
+      </div>
 
       {/* Products Grid */}
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 px-4'>
