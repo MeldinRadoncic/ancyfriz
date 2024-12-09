@@ -11,7 +11,7 @@ const Gallery = () => {
             {/* Full Image 1 */}
             <img
               className='object-cover w-full h-2/3 rounded-lg shadow-lg'
-              src='./images/landing/hair1.jpg'
+              src='./images/landing/hair1.webp'
               alt='Long Hair First Image'
             />
             {/* Image 5 */}
@@ -28,20 +28,20 @@ const Gallery = () => {
               {/* Image 4 */}
               <img
                 className='object-cover w-full h-full rounded-lg shadow-lg'
-                src='./images/landing/hair2.jpg'
+                src='./images/landing/hair2.webp'
                 alt='Short Hair 2'
               />
               {/* Image 3 */}
               <img
                 className='object-cover w-full h-full rounded-lg shadow-lg'
-                src='./images/landing/hair4.jpg'
+                src='./images/landing/hair4.webp'
                 alt='Long Hair 4'
               />
             </div>
             {/* Full Height Last Image */}
             <img
               className='object-cover w-full h-full rounded-lg shadow-lg'
-              src='./images/landing/hair5.jpg'
+              src='./images/landing/hair5.webp'
               alt='Long Hair 5'
             />
           </div>
