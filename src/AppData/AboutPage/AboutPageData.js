@@ -11,24 +11,22 @@ const iconColor = "#B78E74"; // accent-rose-gold
 const AboutPageData = [
   {
     id: 1,
-    imageSrc:
-      "https://via.placeholder.com/500x300",
-    altText: "About us overview",
+    imageSrc: "./images/AboutPage/ancyfrizsalon.avif",
+    altText: "O nama - frizerski salon AncyFriz",
     title: "Naša Priča",
     description:
-      "Naša cjelovita oaza ljepote nudi frizerske usluge za svaki poseban trenutak. U AncyFriz salonu možete pronaći usluge friziranja za žene, muškarce, djecu i starije osobe – sve na jednom mjestu, s profesionalnošću koja nadmašuje očekivanja. S našim stručnim timom razumijemo potrebe i želje naših klijenata te se predano posvećujemo stvaranju savršenog izgleda za svakoga. Dobrodošli u AncyFriz, gdje svaka posjeta postaje čaroban frizerski trenutak",
+      "Dobrodošli u AncyFriz, mjesto gdje se ljepota i stil susreću s profesionalnošću i predanošću. Naš salon nije samo običan frizerski prostor – to je oaza u kojoj se klijenti osjećaju opušteno, cijenjeno i inspirirano. Od trenutka kada uđete u naš salon, osjetit ćete toplu i prijateljsku atmosferu, stvorenu s ciljem da svaki posjet bude posebno iskustvo.\n\nNaša priča počela je s vizijom da pružimo najviši standard usluga za žene, muškarce, djecu i starije osobe. Kroz godine rada izgradili smo reputaciju temeljem povjerenja naših klijenata i strasti prema frizerstvu. Vjerujemo da svaka osoba zaslužuje savršenu frizuru koja ističe njen karakter i stil, stoga se naš tim posvećuje razumijevanju vaših jedinstvenih potreba i želja.\n\nSpecijalizirani smo za širok spektar usluga, uključujući šišanje, farbarnje, balayage, stiliziranje i tretmane za njegu kose. Bez obzira na to želite li klasičan izgled ili modernu transformaciju, naši frizeri koriste najnovije tehnike i trendove kako bi osigurali rezultate koji nadmašuju očekivanja. Svaka usluga počinje konsultacijom kako bismo zajedno kreirali frizuru koja najbolje odražava vašu osobnost.\n\nOsim naših vrhunskih usluga, vjerujemo i u važnost kvalitetnih proizvoda. Stoga koristimo isključivo najbolje brendove za njegu kose kako bismo osigurali zdravlje i sjaj vaših pramenova. Naš cilj je dugotrajno zadovoljstvo klijenata, što postižemo kombinacijom stručnosti, vrhunske opreme i personaliziranog pristupa.\n\nBilo da dolazite na brzinsko šišanje ili kompletnu promjenu stila, AncyFriz je mjesto gdje vaša kosa postaje umjetnost. Posjetite nas i doživite vrhunsku njegu, posvećenost detaljima i osjećaj ljepote koji traje i nakon odlaska iz salona.",
   },
   {
     id: 2,
-    imageSrc:
-      "./images/AboutPage/Products.webp",
-    altText: "Our services overview",
-    title:
-      "Mi koristimo samo najbolje produkte",
+    imageSrc: "./images/AboutPage/Products.webp",
+    altText: "Pregled naših proizvoda",
+    title: "Koristimo samo najbolje proizvode",
     description:
-      "Pružamo širok spektar frizerskih usluga, uključujući personalizirana šišanja, stiliziranje, farbanje, tretmane za zdravlje kose i savjetovanje. Naš prioritet je zadovoljiti želje klijenata, koristeći visokokvalitetne proizvode i najnovije tehnike u svijetu frizerstva.",
+      "Za postizanje savršenih rezultata koristimo proizvode vodećih svjetskih brendova u industriji njege kose. Naša paleta uključuje visokokvalitetne preparate za farbanje, tretmane za oporavak kose i stiliziranje. Kvaliteta proizvoda odražava našu posvećenost zdravlju i ljepoti vaše kose, omogućujući trajne i blistave rezultate.",
   },
 ];
+
 
 // AboutPageCards data
 const AboutPageDataCards = [
@@ -41,11 +39,9 @@ const AboutPageDataCards = [
       />
     ),
     title: "Radno Vrijeme",
-    details: [
-      "Ponedeljak - Subota: 09:00 - 18:00",
-      "Nedelja: 10:00 - 14:00",
-      "Utorak: ZATVORENO",
-    ],
+    description: "Ponedeljak - Subota:\n09:00 - 18:00\nNedelja: 10:00 - 14:00\nUtorak: ZATVORENO"
+      ,
+
   },
   {
     id: 2,
@@ -56,9 +52,8 @@ const AboutPageDataCards = [
       />
     ),
     title: "Adresa",
-    details: [
-      "Ulica Primjera 123",
-      "Sarajevo, Bosna i Hercegovina",
+    description: [
+      "Paromlinska 33\nDolac Malta\nSarajevo",
     ],
   },
   {
@@ -70,9 +65,9 @@ const AboutPageDataCards = [
       />
     ),
     title: "Kontakt",
-    details: [
-      "+387 33 123 456",
-      "info@primjer.com",
+    description: [
+      "+38762 741 146",
+      "info@ancyfriz.com",
     ],
   },
 ];
