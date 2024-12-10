@@ -44,7 +44,7 @@ const AboutPage = () => {
                 key={aboutItem.id}
                 icon={aboutItem.icon}
                 title={aboutItem.title}
-                description={aboutItem.description}
+                description={aboutItem.description }
                 className="about-card flex flex-col text-accent-rose-gold items-center bg-primary-charcoal py-8 rounded-md shadow-lg"
               />
             ))}
