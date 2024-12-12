@@ -1,84 +1,77 @@
 const GalleryPageData = [
   {
     id: 1,
-    img: "https://via.placeholder.com/500x300?text=Image+1",
+    img: "./images/GalleryPage/kosa1.jpg",
   },
   {
     id: 2,
-    img: "https://via.placeholder.com/500x300?text=Image+2",
+    img: "./images/GalleryPage/kosa2.jpg",
   },
   {
     id: 3,
-    img: "https://via.placeholder.com/500x300?text=Image+3",
+    img: "./images/GalleryPage/kosa3.jpg",
   },
   {
     id: 4,
-    img: "https://via.placeholder.com/500x300?text=Image+4",
+    img: "./images/GalleryPage/kosa4.jpg",
   },
   {
     id: 5,
-    img: "https://via.placeholder.com/500x300?text=Image+5",
+    img: "./images/GalleryPage/kosa5.jpg",
   },
   {
     id: 6,
-    img: "https://via.placeholder.com/500x300?text=Image+6",
+    img: "./images/GalleryPage/kosa6.jpg",
   },
   {
     id: 7,
-    img: "https://via.placeholder.com/500x300?text=Image+7",
+    img: "./images/GalleryPage/kosa7.jpg",
   },
   {
     id: 8,
-    img: "https://via.placeholder.com/500x300?text=Image+8",
+    img: "./images/GalleryPage/kosa8.jpg",
   },
   {
     id: 9,
-    img: "https://via.placeholder.com/500x300?text=Image+9",
+    img: "./images/GalleryPage/kosa9.jpg",
   },
   {
     id: 10,
-    img: "https://via.placeholder.com/500x300?text=Image+10",
+    img: "./images/GalleryPage/kosa10.jpg",
   },
   {
     id: 11,
-    img: "https://via.placeholder.com/500x300?text=Image+11",
+    img: "./images/GalleryPage/kosa11.jpg",
   },
   {
     id: 12,
-    img: "https://via.placeholder.com/500x300?text=Image+12",
+    img: "./images/GalleryPage/kosa12.jpg",
   },
   {
     id: 13,
-    img: "https://via.placeholder.com/500x300?text=Image+13",
+    img: "./images/GalleryPage/kosa13.jpg",
   },
   {
     id: 14,
-    img: "https://via.placeholder.com/500x300?text=Image+14",
+    img: "./images/GalleryPage/kosa14.jpeg",
   },
   {
     id: 15,
-    img: "https://via.placeholder.com/500x300?text=Image+15",
+    img: "./images/GalleryPage/kosa15.jpeg",
   },
   {
     id: 16,
-    img: "https://via.placeholder.com/500x300?text=Image+16",
+    img: "./images/GalleryPage/kosa16.jpeg",
   },
   {
     id: 17,
-    img: "https://via.placeholder.com/500x300?text=Image+17",
+    img: "./images/GalleryPage/kosa17.jpg",
   },
   {
     id: 18,
-    img: "https://via.placeholder.com/500x300?text=Image+18",
+    img: "./images/GalleryPage/kosa18.jpg",
   },
-  {
-    id: 19,
-    img: "https://via.placeholder.com/500x300?text=Image+19",
-  },
-  {
-    id: 20,
-    img: "https://via.placeholder.com/500x300?text=Image+20",
-  },
+  
 ];
 
 export default GalleryPageData;
