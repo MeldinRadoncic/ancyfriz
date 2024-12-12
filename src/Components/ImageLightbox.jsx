@@ -47,7 +47,7 @@ const ImageLightbox = ({
             key={image.id}
             src={image.img}
             alt={`Gallery ${index}`}
-            className='cursor-pointer object-cover h-48 w-full'
+            className='cursor-pointer object-cover'
             onClick={() =>
               openLightbox(index)
             }
