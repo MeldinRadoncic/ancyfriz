@@ -6,7 +6,7 @@ function NavItem({
   to,
   label,
   icon = null,
-  textColor = "text-neutral-gray", // Default text color for the link
+  textColor = "text-accent-rose-gold", // Default text color for the link
   onClick,
 }) {
   // handleClick function calls the onClick function if it's provided
@@ -26,7 +26,7 @@ function NavItem({
           // Dynamically applies classes based on whether the link is active
           isActive
             ? `${textColor} font-bold border-b-2 border-${textColor}` // Active link styles: primary text, bold, with a bottom border`
-            : `${textColor} hover:text-neutral-gray transition` // Inactive link styles: neutral text, hover to neutral-gray, with transition effect`
+            : `${textColor} hover:text-accent-rose-gold transition` // Inactive link styles: neutral text, hover to neutral-gray, with transition effect`
       }>
       {/* Container for the icon and label */}
       <div className='flex items-center space-x-2'>
