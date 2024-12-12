@@ -1,72 +1,59 @@
-
-
-
 const OurProductsData = [
     {
         id: 1,
         title: 'Shampoo Antiforfora',
         img: '/images/landing/products/shampoo_antiforfora.webp',
-        description: 'Product 1 Description',
-        link: '/product1'
+        description: 'Šampon Antiforfora pomaže u borbi protiv peruti i pruža temeljito čišćenje tjemena.',
     },
     {
         id: 2,
-        title: 'Absoulute One Leave In',
-        description: 'Product 2 Description',
+        title: 'Absolute One Leave In',
         img: '/images/landing/products/Absolute-One-Leave-In.webp',
-        link: '/product2'
+        description: 'Absolute One Leave In nudi njegu bez ispiranja za zdraviju i sjajniju kosu.',
     },
     {
         id: 3,
         title: 'Choggan Lavaggi',
-        description: 'Product 3 Description',
         img: '/images/landing/products/chogan_lavaggi.webp',
-        link: '/product3'
+        description: 'Choggan Lavaggi je blagi šampon idealan za svakodnevnu upotrebu i hidrataciju kose.',
     },
     {
         id: 4,
         title: 'Choggan Maschera',
-        description: 'Product 4 Description',
         img: '/images/landing/products/chogan_maschera.webp',
-        link: '/product4'
+        description: 'Choggan Maschera intenzivno hrani kosu i poboljšava njenu elastičnost.',
     },
     {
         id: 5,
         title: 'Choggan Shampoo Neem',
-        description: 'Product 5 Description',
         img: '/images/landing/products/chogan_shampoo_neem.webp',
-        link: '/product5'
+        description: 'Šampon Neem pruža prirodnu zaštitu i dubinsko čišćenje tjemena.',
     },
     {
         id: 6,
-        title: 'Linea Bava de lumaca',
-        description: 'Product 6 Description',
+        title: 'Linea Bava de Lumaca',
         img: '/images/landing/products/linea_bava_de_lumaca.webp',
-        link: '/product6'
+        description: 'Linea Bava de Lumaca koristi ekstrakt puževe sluzi za regeneraciju i jačanje kose.',
     },
     {
         id: 7,
         title: 'Magic Argan Oil',
-        description: 'Product 7 Description',
         img: '/images/landing/products/magic_arganoil.webp',
-        link: '/product7'
-    }, 
+        description: 'Magic Argan Oil hidrira i revitalizuje kosu zahvaljujući bogatom ulju argana.',
+    },
     {
         id: 8,
-        title: 'Maquilland Cocco ',
-        description: 'Product 8 Description',
+        title: 'Maquilland Cocco',
         img: '/images/landing/products/maquiandcocco.webp',
-        link: '/product8'
+        description: 'Maquilland Cocco sadrži kokosovo ulje za prirodni sjaj i hidrataciju kose.',
     },
     {
         id: 9,
         title: 'Rommice And Dattero',
-        description: 'Product 9 Description',
         img: '/images/landing/products/romiceanddattero.webp',
-        link: '/product9'
+        description: 'Rommice And Dattero nudi hranjive sastojke datulje za zdravu i glatku kosu.',
+        
     }
+];
 
-]
-
-
-export default OurProductsData; 
+export default OurProductsData;

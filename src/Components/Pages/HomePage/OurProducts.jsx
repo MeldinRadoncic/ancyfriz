@@ -25,7 +25,7 @@ const OurProducts = () => {
       </div>
 
       {/* Products Grid */}
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 px-4'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 px-4 px-6 sm:px-12 md:px-0  lg:px-12 xl:px-24'>
         {OurProductsData.map(
           (product, index) => (
             <div
