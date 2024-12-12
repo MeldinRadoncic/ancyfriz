@@ -42,26 +42,33 @@ const ContactPage = () => {
   const onSubmit = async () => {
     setLoading(true);
     setFormError("");
+    
     try {
-      const response = await axios.post('http://localhost:5000/api/send-email', values);
+      const apiUrl = process.env.REACT_APP_API_URL;
+      const apiEndpoint = process.env.NODE_ENV === 'development'
+        ? "http://localhost:5000/api/send-email"
+        : `${apiUrl}/api/send-email`;
+  
+      const response = await axios.post(apiEndpoint, values);
+      
       if (!response.ok) {
         setFormError(true);
+      } else {
+        setSuccess(true);
+        values.name = "";
+        values.email = "";
+        values.phone = "";
+        values.question = "";
       }
-      setSuccess(true);
-      values.name = "";
-      values.email = "";
-      values.phone = "";
-      values.question = "";
     } catch (error) {
       console.log('ERROR: ', error);
       setFormError(true);
       setSuccess(false);
-      console.error(error);
     } finally {
-      setFormError(false);
       setLoading(false);
     }
   };
+  
 
   const isFormValid = values.name && values.email && values.phone && values.question && !loading;
 
