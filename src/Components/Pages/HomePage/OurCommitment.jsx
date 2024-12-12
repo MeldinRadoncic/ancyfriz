@@ -22,11 +22,12 @@ const OurCommitment = () => {
         
     
       <div className='mt-12 drop-shadow-md w-full md:w-1/2 mx-auto'>
-      <a href="/onama">
-  <Button className="w-1/2 bg-black">
-    O Nama
-  </Button>
-</a>
+      <Button
+        title='Saznajte Više'
+        link='/onama'
+        className='w-full bg-button-yellow'
+
+      />
 
       </div>
       </div>

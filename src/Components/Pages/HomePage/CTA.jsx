@@ -18,16 +18,16 @@ const CTA = () => {
         </p>
         </div>
         <div className='flex mx-auto justify-center gap-8 items-center py-2 w-full  lg:w-1/2'>
-        <a href="tel:+38762741146">
-          <Button className='px-8 py-3 text-lg font-semibold bg-yellow-500 text-gray-800 rounded-sm shadow-lg hover:bg-yellow-600 transition duration-300'>
-            Pozovite Nas
-          </Button>
-          </a>
-          <a href="/kontakt">
-          <Button className='px-8 py-3 text-lg font-semibold bg-black text-neural-gray rounded-sm shadow-lg hover:bg-white hover:text-primary-charcoal transition duration-300'>
-            Pisite Nam
-          </Button>
-          </a>
+        <Button
+          title='Pozovite Nas'
+          link='tel:+38762741146'
+          className='bg-button-yellow text-primary-charcoal'
+        />
+          <Button
+            title='Pišite Nam'
+            link='/kontakt'
+            className='bg-button-black text-white'
+          />
         </div>
       </div>
     </div>

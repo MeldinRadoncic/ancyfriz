@@ -26,12 +26,16 @@ const HeroBanner = () => {
 
           {/* Buttons for Large Devices */}
           <div className='hidden lg:flex space-x-2 mt-12 w-full lg:w-3/4'>
-            <Button className='bg-black w-1/2'>
-              Pišite Nam
-            </Button>
-            <Button className='bg-transparent text-white border-2 rounded-sm w-1/2 hover:bg-primary-charcoal'>
-              Pozovite Nas
-            </Button>
+          <Button
+          title='Pozovite Nas'
+          link='tel:+38762741146'
+          className='bg-button-yellow text-primary-charcoal'
+          />
+          <Button
+          title='Pišite Nam'
+          link='/kontakt'
+          className='bg-button-black'
+          />
           </div>
         </div>
 
@@ -45,12 +49,20 @@ const HeroBanner = () => {
 
       {/* Buttons for Small Devices */}
       <div className='flex lg:hidden mt-24 justify-around px-4 space-x-4'>
-        <Button className='bg-black'>
-          Zakažite termin
-        </Button>
-        <Button className='bg-transparent border-2 rounded-sm'>
-          Pozovite Nas
-        </Button>
+      <Button
+      title='Pozovite Nas'
+      link='tel:+38762741146'
+      className='bg-button-yellow text-primary-charcoal'
+      />
+         
+          <Button
+          title='Pišite Nam'
+          link='/kontakt'
+          className='bg-button-black text-white'
+           />
+            
+          
+         
       </div>
     </Section>
   );

@@ -13,6 +13,8 @@ module.exports = {
         'accent-olive': '#A7A284',       // Olive green accent - subtle highlights
         'neutral-gray': '#D9D7D2',       // Soft warm gray - alternate background
         'neutral-beige': '#EDE5DA',      // Sandy beige - secondary light background
+        'button-yellow': '#FFD700',      // Bright yellow - button highlights
+        'button-black': '#000000',       // Black - button text
       },
       spacing: {
         '2': '0.5rem',

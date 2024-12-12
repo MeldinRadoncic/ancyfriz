@@ -1,11 +1,18 @@
 import React from 'react';
 
 
-const Button = ({ children, className, type }) => {
+const Button = ({ link='',
+    title,
+    type='button',
+    className,
+    
+  }) => {
     return (
-        <button type={type} className={`bg-accent-rose-gold text-neutral-pearl px-4 py-2 mt-4 ${className}`}>
-            {children}
-        </button>
+        <a href={link}>
+          <button className={`px-8 py-3 text-lg font-semibold rounded-sm shadow-lg transition duration-300' ${className}`} type={type}>
+            {title}
+          </button>
+          </a>
     )
 }
 
