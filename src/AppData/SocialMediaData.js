@@ -1,33 +1,28 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 const iconSize = 24;        
 const SocialMediaData = [
     {
         id: 1,
         icon: <FaFacebook size={iconSize} />,
-        link: 'https://www.facebook.com',
+        link: 'https://www.facebook.com/people/AncyFriz-frizerski-studio/100088513466883/',
         title: 'Facebook'
         
     },
     {
         id: 2,
         icon: <FaInstagram size={iconSize}/>,
-        link: 'https://www.instagram.com',
+        link: 'https://www.instagram.com/ancyfriz_frizerski_studio/',
         title: 'Instagram'
     },
+    
     {
-        id: 3,
-        icon: <FaTwitter size={iconSize}/>,
-        link: 'https://www.twitter.com',
-        title: 'Twitter'
+        id: 5,
+        icon: <FaTiktok size={iconSize}/>,
+        link: 'https://www.tiktok.com/@ancyfriz',
+        title: 'TikTok'
     },
-    {
-        id: 4,
-        icon: <FaYoutube size={iconSize}/>,
-        link: 'https://www.youtube.com',
-        title: 'Youtube'
-    }
 ];
 
 export default SocialMediaData;

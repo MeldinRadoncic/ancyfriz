@@ -82,7 +82,10 @@ const Footer = () => {
                       key={social.id}
                       title={
                         social.title
-                      }>
+                      }
+                      target="_blank"
+                      rel="noreferrer"
+                      >
                       {social.icon}
                     </a>
                   </li>
