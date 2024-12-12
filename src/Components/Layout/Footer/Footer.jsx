@@ -76,10 +76,9 @@ const Footer = () => {
             <ul className='flex gap-2'>
               {SocialMediaData.map(
                 (social) => (
-                  <li>
+                  <li key={social.id}>
                     <a
                       href={social.link}
-                      key={social.id}
                       title={
                         social.title
                       }
