@@ -3,10 +3,16 @@ import React from "react";
 import Section from "../../Section";
 import ReusableBanner from "../../ReusableBanner";
 import ThirdTitle from "../../Titles/ThirdTitle";
+import Meta from "../../Meta";
 
 const PrivacyPolicyPage = () => {
     return (
         <>
+        <Meta
+            index="noindex"
+            follow="nofollow"
+            />
+
             <ReusableBanner
                 title="Politika privatnosti"
                 description="Ovo je politika privatnosti web stranice"
