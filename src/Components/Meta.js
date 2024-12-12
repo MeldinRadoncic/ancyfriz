@@ -2,20 +2,20 @@ import { Helmet } from 'react-helmet';
 
 function Meta(props = {}) {
   const {
-    title = "Ahcy Friz Salon Ljepote samo za vas",
-    description = "Ahcy Friz Salon",
+    title = "Ancy Friz Salon Ljepote samo za vas",
+    description = "Ancy Friz Salon",
     url = "https://www.ancyfriz.com/",
     icon = "./favicon.ico",
     author = "Anida Imamović",
     canonical = "https://www.ancyfriz.com/",
     ogTitle = "Ancy Friz Salon Ljepote samo za vas",
-    ogDescription = "Ahcy Friz Salon",
+    ogDescription = "Ancy Friz Salon",
     ogImage = "/logo.svg",
     ogUrl = "https://www.ancyfriz.com",
     ogType = "website",
-    ogSiteName = "Ahcy Friz Salon",
+    ogSiteName = "Ancy Friz Salon",
     ogLocale = "en_US",
-    ogArticleAuthor = "App Wizard",
+    ogArticleAuthor = "Ancy Friz",
     index = "index",
     follow = "follow",
   } = props;
