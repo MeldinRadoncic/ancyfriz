@@ -42,7 +42,7 @@ const HeroBanner = () => {
         {/* Right Side - Subtitle */}
         <div className='flex flex-col items-center lg:items-start text-white text-center lg:text-left justify-center lg:hidden'>
           <p className='text-lg sm:text-xl lg:text-2xl bg-black/40 p-4 rounded-lg shadow-md'>
-          Želiš li otkriti svoju unikatnu ljepotu u srcu Sarajeva? Posjeti naš Beauty Salon gdje naš stručni tim s predanošću stvara nezaboravno iskustvo ističući tvoj jedinstveni stil. Posjeti nas i doživi transformaciju koja će te oduševiti. Tvoje zadovoljstvo je naša misija. Dođi i prepusti se našem stručnom timu uživanja u ljepoti.
+          Želiš li otkriti svoju unikatnu ljepotu u srcu Sarajeva? Posjeti naš Beauty Salon gdje naš stručni tim s predanošću stvara nezaboravno iskustvo ističući tvoj jedinstveni stil.
           </p>
         </div>
       </div>
