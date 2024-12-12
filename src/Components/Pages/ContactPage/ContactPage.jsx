@@ -184,12 +184,11 @@ const ContactPage = () => {
 
             {/* Submit Button */}
             <Button
-              type="submit"
-              className="w-full"
-              disabled={!isFormValid}
-            >
-              POSALJI
-            </Button>
+            type="submit"
+            title='Pošalji'
+            disabled={!isFormValid}
+            className='w-full mt-4 bg-button-yellow text-primary-charcoal'
+            />
           </form>
           <p className="text-sm text-center text-gray-600 mt-4">
   Slanjem ovog obrasca slažete se s našom{" "}
