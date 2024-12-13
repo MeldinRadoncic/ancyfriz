@@ -30,9 +30,9 @@ const Footer = () => {
             +387 62 741-146
           </a>
           <a
-            href='mailto:info@ancyfriz.com'
+            href='mailto:ancyfriz005@gmail.com'
             className='text-blue-400 hover:underline'>
-            info@ancyfriz.com
+            ancyfriz005@gmail.com
           </a>
         </div>
 
