@@ -2,14 +2,14 @@ import { Helmet } from 'react-helmet';
 
 function Meta(props = {}) {
   const {
-    title = "Ancy Friz Salon Ljepote samo za vas",
-    description = "Ancy Friz Salon",
+    title = "Profesionalno Stiliziranje i Farbanje Kose u Sarajevu | Ancy Friz",
+    description = "Otkrijte stručne frizerske usluge u Sarajevu sa Ancy Friz. Nudimo balayage, farbanje kose i moderne frizure za žene, muškarce i djecu. Posjetite nas na Paromlinskoj 33 već danas!",
     url = "https://www.ancyfriz.com/",
     icon = "./favicon.ico",
     author = "Anida Imamović",
     canonical = "https://www.ancyfriz.com/",
-    ogTitle = "Ancy Friz Salon Ljepote samo za vas",
-    ogDescription = "Ancy Friz Salon",
+    ogTitle = "Profesionalno Stiliziranje i Farbanje Kose u Sarajevu | Ancy Friz",
+    ogDescription = "Otkrijte stručne frizerske usluge u Sarajevu sa Ancy Friz. Nudimo balayage, farbanje kose i moderne frizure za žene, muškarce i djecu. Posjetite nas na Paromlinskoj 33 već danas!",
     ogImage = "/logo.svg",
     ogUrl = "https://www.ancyfriz.com",
     ogType = "website",
