@@ -48,7 +48,7 @@ const HeroBanner = () => {
       </div>
 
       {/* Buttons for Small Devices */}
-      <div className='flex lg:hidden mt-24 justify-around px-4 space-x-4'>
+      <div className='flex lg:hidden mt-24 justify-around px-4 space-x-4 z-20'>
       <Button
       title='Pozovite Nas'
       link='tel:+38762741146'
