@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+import Layout from "../../Layout/Layout";
 import useForm from "../../../hooks/useForm";
 import ReusableBanner from "../../ReusableBanner";
 import Section from "../../Section";
@@ -86,7 +87,7 @@ const ContactPage = () => {
         description="Have questions? We're here to help."
         background="bg-indigo-600"
       />
-
+      <Layout>
       {/* Social Media Section */}
       <div className="flex justify-center space-x-4 py-4">
         {SocialMediaData.map((social) => (
@@ -208,6 +209,7 @@ const ContactPage = () => {
 
         </div>
       </Section>
+      </Layout>
     </>
   );
 };
