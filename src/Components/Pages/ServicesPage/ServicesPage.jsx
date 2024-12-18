@@ -1,8 +1,8 @@
 import React from "react";
 
+import Layout from "../../Layout/Layout";
 import Section from "../../Section";
 import ReusableBanner from "../../ReusableBanner";
-import SecondaryTitle from "../../Titles/SecondaryTitle";
 import CTA from "../../../Components/Pages/HomePage/CTA";
 import ImageTextBlock from "../../../Components/ImageTextBlock";
 import Card from "../../../Components/Card";
@@ -23,8 +23,8 @@ ktar usluga koje nudimo za vašu ljepotu i njegu kose.'
         title='Naše Usluge'
         description='Otkrijte širok spektar usluga koje nudimo za vašu ljepotu i njegu kose.'
       />
-
-      <Section>
+  <Layout>
+      <Section className=' overflow-auto'>
         <div className='container mx-auto px-8 lg:px-24'>
           {/* Image and Text Section */}
           {ServicePageData.map((data) => (
@@ -61,6 +61,7 @@ ktar usluga koje nudimo za vašu ljepotu i njegu kose.'
         </div>
         <CTA />
       </Section>
+    </Layout>
     </>
   );
 };

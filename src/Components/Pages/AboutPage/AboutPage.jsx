@@ -1,7 +1,8 @@
 import React from "react";
+
+import Layout from "../../Layout/Layout";
 import Section from "../../Section";
 import ReusableBanner from "../../ReusableBanner";
-import SecondaryTitle from "../../Titles/SecondaryTitle";
 import CTA from "../../../Components/Pages/HomePage/CTA";
 import ImageTextBlock from "../../../Components/ImageTextBlock";
 import Card from "../../../Components/Card";
@@ -20,8 +21,9 @@ const AboutPage = () => {
         title="O nama"
         description="Za Beskrajnu Ljepotu i Stil, AncyFriz – Vaša Destinacija!"
         
-      />
+        />
 
+        <Layout>
       <Section>
         <div className="container mx-auto px-8 lg:px-24">
           {/* First Image and Text Section */}
@@ -54,7 +56,11 @@ const AboutPage = () => {
           <div className="mt-16 text-center"></div>
         </div>
         <CTA />
+            
       </Section>
+    </Layout>
+            
+
     </>
   );
 };
