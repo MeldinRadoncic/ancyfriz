@@ -13,7 +13,7 @@ const HeroBanner = () => {
       }}>
       {/* Overlay */}
       <div
-        className='absolute inset-0 bg-primary-charcoal opacity-40' // Overlay with 0.4 opacity
+        className='absolute inset-0 bg-primary-charcoal/10'
         aria-hidden='true'></div>
 
       {/* Content */}
@@ -41,7 +41,7 @@ const HeroBanner = () => {
 
         {/* Right Side - Subtitle */}
         <div className='flex flex-col items-center lg:items-start text-white text-center lg:text-left justify-center lg:hidden'>
-          <p className='text-lg sm:text-xl lg:text-2xl bg-black/40 p-4 rounded-lg shadow-md'>
+          <p className='text-lg sm:text-xl lg:text-2xl inset-0 bg-primary-charcoal/10 p-4 rounded-lg shadow-md'>
           Želiš li otkriti svoju unikatnu ljepotu u srcu Sarajeva? Posjeti naš Beauty Salon gdje naš stručni tim s predanošću stvara nezaboravno iskustvo ističući tvoj jedinstveni stil.
           </p>
         </div>
